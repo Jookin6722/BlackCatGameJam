@@ -1,0 +1,43 @@
+[gd_scene load_steps=3 format=3 uid="uid://wuk14rxrfp31"]
+
+[ext_resource type="Script" path="res://options.gd" id="1_er7u7"]
+
+[sub_resource type="AudioStream" id="AudioStream_hlc7c"]
+
+[node name="Options" type="Node2D"]
+script = ExtResource("1_er7u7")
+
+[node name="Back" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 910.0
+offset_top = 540.0
+offset_right = 1110.0
+offset_bottom = 615.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Back "
+
+[node name="Volume Slider" type="HSlider" parent="."]
+offset_left = 426.0
+offset_top = 178.0
+offset_right = 726.0
+offset_bottom = 269.0
+min_value = -80.0
+max_value = 0.0
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Volume Slider"]
+stream = SubResource("AudioStream_hlc7c")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 476.0
+offset_top = 143.0
+offset_right = 678.0
+offset_bottom = 211.0
+theme_override_font_sizes/normal_font_size = 50
+text = "Volume"
+
+[connection signal="changed" from="Volume Slider" to="." method="_on_volume_slider_changed"]

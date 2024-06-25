@@ -1,0 +1,9 @@
+res://Scenes/back_ground_music.tscn
+res://Scenes/back_ground_music.gd
+res://Scripts/main.gd
+res://Scenes/main.tscn
+res://Scenes/options.tscn
+res://Scenes/credits.tscn
+res://Scripts/options.gd
+res://Scripts/credits.gd
+res://Scripts/back_ground_music.gd

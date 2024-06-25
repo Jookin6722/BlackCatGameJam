@@ -1,3 +1,16 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1719340775
+::res://::1719346469
 icon.svg::CompressedTexture2D::5707471992648955882::1719340771::1719340775::1::::<><>::
+README.md::TextFile::-1::1719340812::0::1::::<><>::
+::res://Music/::1719346000
+crush-fm-glitch-hop-copyright-free-music-no6-215530.mp3::AudioStreamMP3::3597249660890385054::1719345155::1719346000::1::::<><>::
+::res://Scenes/::1719346541
+back_ground_music.tscn::PackedScene::3391681114967329207::1719346553::0::1::::<><>::uid://brisf84jadm43::::res://Music/crush-fm-glitch-hop-copyright-free-music-no6-215530.mp3<>res://Scenes/back_ground_music.gd
+credits.tscn::PackedScene::483771388201327140::1719346541::0::1::::<><>::res://Scripts/credits.gd
+main.tscn::PackedScene::4370789424340548308::1719346541::0::1::::<><>::res://Scripts/main.gd
+options.tscn::PackedScene::1586097266193876454::1719346541::0::1::::<><>::res://Scripts/options.gd<>uid://brisf84jadm43::::res://Music/crush-fm-glitch-hop-copyright-free-music-no6-215530.mp3
+back_ground_music.gd::GDScript::-1::1719346409::0::1::::<>AudioStreamPlayer<>::
+::res://Scripts/::1719346541
+credits.gd::GDScript::-1::1719344054::0::1::::<>Node2D<>::
+main.gd::GDScript::-1::1719346541::0::1::::<>Node2D<>::
+options.gd::GDScript::-1::1719345702::0::1::::<>Node2D<>::

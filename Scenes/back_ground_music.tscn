@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://bok7q0itsqxkh"]
+
+[ext_resource type="AudioStream" uid="uid://brisf84jadm43" path="res://Music/crush-fm-glitch-hop-copyright-free-music-no6-215530.mp3" id="1_5jord"]
+[ext_resource type="Script" path="res://Scripts/back_ground_music.gd" id="2_hl60u"]
+
+[node name="BackGroundMusic" type="AudioStreamPlayer"]
+stream = ExtResource("1_5jord")
+script = ExtResource("2_hl60u")

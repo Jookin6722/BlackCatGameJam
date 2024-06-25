@@ -1,0 +1,44 @@
+[gd_scene load_steps=3 format=3 uid="uid://wuk14rxrfp31"]
+
+[ext_resource type="Script" path="res://Scripts/options.gd" id="1_fvjib"]
+[ext_resource type="AudioStream" uid="uid://brisf84jadm43" path="res://Music/crush-fm-glitch-hop-copyright-free-music-no6-215530.mp3" id="2_mshm2"]
+
+[node name="Options" type="Node2D"]
+script = ExtResource("1_fvjib")
+
+[node name="Back" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 910.0
+offset_top = 540.0
+offset_right = 1110.0
+offset_bottom = 615.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Back "
+
+[node name="Volume Slider" type="HSlider" parent="."]
+offset_left = 426.0
+offset_top = 178.0
+offset_right = 726.0
+offset_bottom = 269.0
+min_value = -80.0
+max_value = 0.0
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Volume Slider"]
+stream = ExtResource("2_mshm2")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 476.0
+offset_top = 143.0
+offset_right = 678.0
+offset_bottom = 211.0
+theme_override_font_sizes/normal_font_size = 50
+text = "Volume"
+
+[connection signal="pressed" from="Back" to="." method="_on_back_pressed"]
+[connection signal="changed" from="Volume Slider" to="." method="_on_volume_slider_changed"]
+[connection signal="value_changed" from="Volume Slider" to="." method="_on_volume_slider_value_changed"]
